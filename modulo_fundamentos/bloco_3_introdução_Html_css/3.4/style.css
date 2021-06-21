@@ -1,0 +1,28 @@
+article{
+    width: 600px;
+    margin-left: 400px;
+    margin-top: 100px;
+    background-color:lightpink;
+}
+
+
+h1{
+    margin-left: 400px;
+    font-size: 50px;
+}
+
+.navegador li {
+    display: inline;
+}
+.navegador{
+    margin-left: 1580px;
+}
+legend{
+    font-size: 15px;
+}
+footer{
+    text-align: end;
+}
+body{
+    background-color: lavenderblush;
+}
