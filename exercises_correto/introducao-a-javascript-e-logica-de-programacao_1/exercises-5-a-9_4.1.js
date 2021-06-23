@@ -17,32 +17,23 @@ let c = 8;
 let av = a % 2;
 let bv = b % 2;
 let cv = c % 2;
-if(av == 0){
-    console.log("true");
-}
-else if (bv == 0){
-    console.log("true");
-}
-else if (cv == 0){
+
+if (av == 0 || bv ==0 || cv == 0){
     console.log("true");
 }
 else {
-    console.log("false");
+    console.log("false")
 }
 
 
 //exercicio 9
-if(av != 0){
-    console.log("true");
-}
-else if (bv != 0){
-    console.log("true");
-}
-else if (cv != 0){
+
+
+if (av != 0 || bv !=0 || cv != 0){
     console.log("true");
 }
 else {
-    console.log("false");
+    console.log("false")
 }
 
 
