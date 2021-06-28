@@ -1,4 +1,4 @@
-let n = 7;
+let n = 11;
 let padrao ="";
 let nume = 0;
 let nume2 = 0;
