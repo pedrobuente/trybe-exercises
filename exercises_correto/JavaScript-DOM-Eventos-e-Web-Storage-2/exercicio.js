@@ -2,6 +2,7 @@
 let h = document.createElement('h1');
 h.innerText = "Exercício 5.2 - JavaScript DOM";
 document.body.appendChild(h);
+h.classList.add('title');
 
 let div = document.createElement('div');
 document.body.appendChild(div);
@@ -39,10 +40,11 @@ let array= ['um','dois','tres','quatro','cinco','seis','sete','oito','nove','dez
 
 let lugar2 = document.getElementsByTagName('ul')[0];
 for (index = 0 ; index < array.length ; index += 1){
-let item = array[index];
-let li = document.createElement('li');
-li.innerText = item ;
-lugar2.appendChild(li);
+    let item = array[index];
+    let li = document.createElement('li');
+    li.innerText = item ;
+    lugar2.appendChild(li);
+    li.className = "new";
 }
 
 let h31 = document.createElement('h3');
@@ -54,10 +56,23 @@ lugar.appendChild(h32);
 let h33 = document.createElement('h3');
 lugar.appendChild(h33);
 
+h3Lug = document.getElementsByTagName('h3');
+for (let index2 = 0 ; index2 < h3Lug.length ; index2 += 1){
+    h3Lug[index2].classList.add('description');
+}
+
+lugar.removeChild(div3);
+
+document.getElementsByClassName('right-content')[0].style.margin = 'auto';
+
+document.getElementsByClassName('center-content')[0].style.backgroundColor = 'green';
 
 
 
-
-
-
-
+let elementos = document.querySelectorAll('.new');
+for(let i = 0 ; i < elementos.length ; i += 1){
+    let elemento = elementos[i];
+        if(i > 7){
+            lugar2.removeChild(elemento);
+        }
+}
